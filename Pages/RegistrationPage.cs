@@ -53,9 +53,9 @@ namespace ClassLibrary2.Pages
             OLXIMEtxtbox.SendKeys(name);
             SPOLbutton.Click();
             LOKACIJAdropdown.Click();
-            Thread.Sleep(100);
-            MJESTOdropdown.Click();
+            Thread.Sleep(300);
             USLOVIKORIŠTENJAcheckbox.Click();
+            MJESTOdropdown.Click();
             ZAVRSIREGISTRACIJUbutton.Click();
 
             return new RegistrationPage(driver);
@@ -65,7 +65,7 @@ namespace ClassLibrary2.Pages
         public RegistrationPage VerifyThatUserIsRegistered(string name)
         {
 
-            Assert.True(driver.FindElement(By.XPath($"//strong[text()='{name}']")).Displayed, "yus");
+            Assert.True(driver.FindElement(By.XPath($"//strong[text()='{name}']")).Displayed, "Yes");
 
             return new RegistrationPage(driver);
         }
