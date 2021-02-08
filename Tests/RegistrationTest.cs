@@ -14,9 +14,9 @@ namespace ClassLibrary2.Tests
         [Test]
         public void VerifyThatNewUserCanRegister()
         {
-            string email = "testniuser12345@gmail.com";
-            string password = "testnipassword";
-            string name = "testnoime12345";
+            string email = "provjeratest@gmail.com";
+            string password = "testnipassword12";
+            string name = "provjeratest12";
             
             
             HomePage home_page = BasePage.OpenLoginForm();
